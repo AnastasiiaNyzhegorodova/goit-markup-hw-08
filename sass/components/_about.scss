@@ -1,0 +1,40 @@
+.about__img {
+  display: block;
+}
+
+.about__tittle {
+   margin: 0 auto 50px;
+}
+
+.about__list {
+  display: flex;
+  .about__item + .about__item {
+    margin-left: 30px;
+  }
+}
+
+.about__thumb {
+  position: relative;
+}
+
+.about__tittle-wrap {
+  position: absolute;
+
+  width: 370px;
+  height: 70px;
+  bottom: 0;
+
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.about__item-tittle {
+  margin: 27px auto;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
