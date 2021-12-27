@@ -419,10 +419,6 @@ body {
   }
 }
 
-.team__img {
-  display: block;
-}
-
 .team__item-tittle {
   margin-bottom: 10px;
   font-weight: 500;
@@ -855,15 +851,21 @@ body {
 
 .filter {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: start;
+  margin-top: -15px;
 }
 
-.filter .filter__item + .filter__item {
-  margin-left: 8px;
+.filter .filter__item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.filter .filter__item {
+  margin-top: 15px;
 }
 
 .filter__position {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .filter__button {
@@ -908,12 +910,6 @@ body {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-@media screen and (max-width: 767px) {
-  .portfolio__link img {
-    width: 100%;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .portfolio__link {
     display: flex;
@@ -936,6 +932,10 @@ body {
 .portfolio__item {
   display: flex;
   justify-content: center;
+}
+
+.portfolio__item img {
+  width: 100%;
 }
 
 @media screen and (max-width: 767px) {
@@ -981,10 +981,6 @@ body {
   transform: translateY(0);
   opacity: 1;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.portfolio__img {
-  display: block;
 }
 
 .portfolio__tittle {
