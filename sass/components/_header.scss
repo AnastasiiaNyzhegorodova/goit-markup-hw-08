@@ -84,7 +84,6 @@
 
 .contact__list {
   display: none;
-  // display: flex;
   margin-left: auto;
 
   @media screen and (min-width: 768px) {
@@ -136,7 +135,10 @@
   margin-right: 10px;
 }
 
-.page-header__button {
+.mobile-menu__open-button {
+  background-color: transparent;
+  border: none;
+
   @media screen and (min-width: 768px) {
     display: none;
   }
