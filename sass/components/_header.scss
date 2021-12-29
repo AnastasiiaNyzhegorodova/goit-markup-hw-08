@@ -136,6 +136,9 @@
 }
 
 .mobile-menu__open-button {
+  display: flex;
+  align-items: center;
+
   background-color: transparent;
   border: none;
 
