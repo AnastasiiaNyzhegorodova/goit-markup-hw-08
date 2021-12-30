@@ -1,4 +1,3 @@
-@charset "UTF-8";
 :root {
   --title-text-color: #212121;
   --main-text-color: #757575;
@@ -1107,7 +1106,6 @@ body {
   left: 0;
   width: 100vw;
   height: 100vh;
-  display: none;
 }
 
 .mobile-menu .container {
@@ -1128,11 +1126,7 @@ body {
   flex-direction: column;
 }
 
-юmobile-menu__navigation {
-  margin-bottom: auto;
-}
-
-.mobile-menu__navigation-list {
+.mobile-menu__navigation {
   margin-bottom: auto;
 }
 
