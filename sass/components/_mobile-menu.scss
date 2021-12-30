@@ -8,8 +8,8 @@
    .container {
      height: 100%;
    }
-
-}
+   display: none;
+ }
 
 .mobile-menu__close-button {
   margin-left: auto;
@@ -23,8 +23,12 @@
 .mobile-menu__container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  // justify-content: space-between;
  
+}
+
+юmobile-menu__navigation {
+  margin-bottom: auto;
 }
 
 .mobile-menu__navigation-list {
