@@ -10,9 +10,7 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    margin: -15px;
-    // margin-top: -30px;
-    // margin-left: -30px;
+    margin: -15px;    
   }
 }
 
@@ -33,9 +31,7 @@
     }
   }
 
-  @media screen and (min-width: 768px) {
-    // margin-top: 30px;
-    // margin-left: 30px;
+  @media screen and (min-width: 768px) {    
     flex-basis: calc(100% / 2 - 30px);
     margin: 15px;
   }
@@ -44,10 +40,6 @@
     flex-basis: calc(100% / 4 - 30px);
   }
 }
-
-// .team__img {
-//   display: block;
-// }
 
 .team__item-tittle {
   margin-bottom: 10px;

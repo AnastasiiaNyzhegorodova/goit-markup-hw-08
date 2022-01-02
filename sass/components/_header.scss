@@ -118,14 +118,12 @@
 
 .contact__item {
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    &:not(:last-child) {
-      // margin-left: 50px;
+    &:not(:last-child) {      
       margin-bottom: 12px;
     }
   }
   @media screen and (min-width: 1200px) {
-    &:not(:last-child) {
-      // margin-left: 50px;
+    &:not(:last-child) {      
       margin-right: 30px;
     }
   }
@@ -141,6 +139,9 @@
 
   background-color: transparent;
   border: none;
+  &:hover, &:focus .mobile-menu__open-icon {
+    fill: var(--accent-color);
+  }
 
   @media screen and (min-width: 768px) {
     display: none;

@@ -1,5 +1,7 @@
-.about__img {
-  display: block;
+.about {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }
 
 .about__tittle {

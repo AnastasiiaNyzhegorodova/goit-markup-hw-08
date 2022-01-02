@@ -39,12 +39,13 @@
         </button>
         
         <div class="mobile-menu is-hidden">
-          <button type="button" class="mobile-menu__close-button">
-            <svg class="mobile-menu__close-icon" width="17" height="17">
-              <use href="./images/icons.svg#button-modal"></use>
-            </svg>
-          </button>
           <div class="container mobile-menu__container">
+            <button type="button" class="mobile-menu__close-button">
+              <svg class="mobile-menu__close-icon" width="17" height="17">
+                <use href="./images/icons.svg#button-modal"></use>
+              </svg>
+            </button>
+            
             <nav class="mobile-menu__navigation">
               <ul class="list mobile-menu__navigation-list">
                 <li class="mobile-menu__navigation-list-item">
@@ -162,15 +163,24 @@
           <h2 class="visually-hidden">Портфолио</h2>
           <ul class="list portfolio">
             <li class="portfolio__item">
-              <a class="link portfolio__link" href="">
+              <a class="link portfolio__link" href="#">
                 <div class="portfolio__thumb">
-                  <img
-                    class="portfolio__img img"
-                    src="./images/img1-port1.jpg"
-                    alt="ноутбук"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source srcset="
+                      ./images/portfolio/works-1-desktop.jpg 1x, 
+                      ./images/portfolio/works-1-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                  
+                    <source srcset="
+                      ./images/portfolio/works-1-tablet.jpg 1x, 
+                      ./images/portfolio/works-1-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                  
+                    <source srcset="
+                      ./images/portfolio/works-1.jpg 1x, 
+                      ./images/portfolio/works-1@2x.jpg 2x" media="(min-width: 320px)">
+                  
+                    <img class="img" src="./images/portfolio/works-1-desktop.jpg" alt="ноутбук" />
+                  </picture>
+                  
                   <p class="portfolio__overlay">
                     "Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -186,15 +196,24 @@
               </a>
             </li>
             <li class="portfolio__item">
-              <a class="link portfolio__link" href="">
+              <a class="link portfolio__link" href="#">
                 <div class="portfolio__thumb">
-                  <img
-                    class="portfolio__img img"
-                    src="./images/img2-port.jpg"
-                    alt="два баскетболиста"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source srcset="
+                      ./images/portfolio/works-2-desktop.jpg 1x, 
+                      ./images/portfolio/works-2-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                  
+                    <source srcset="
+                      ./images/portfolio/works-2-tablet.jpg 1x, 
+                      ./images/portfolio/works-2-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                  
+                    <source srcset="
+                      ./images/portfolio/works-2.jpg 1x, 
+                      ./images/portfolio/works-2@2x.jpg 2x" media="(min-width: 320px)">
+                  
+                    <img class="img" src="./images/portfolio/works-2-desktop.jpg" alt="два баскетболиста" />
+                  </picture>
+                  
                   <p class="portfolio__overlay">
                     "Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -211,15 +230,23 @@
               </a>
             </li>
             <li class="portfolio__item">
-              <a class="link portfolio__link" href="">
+              <a class="link portfolio__link" href="#">
                 <div class="portfolio__thumb">
-                  <img
-                    class="portfolio__img img"
-                    src="./images/img3-port.jpg"
-                    alt="логотип ресторана"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source srcset="
+                      ./images/portfolio/works-3-desktop.jpg 1x, 
+                      ./images/portfolio/works-3-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                  
+                    <source srcset="
+                      ./images/portfolio/works-3-tablet.jpg 1x, 
+                      ./images/portfolio/works-3-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                  
+                    <source srcset="
+                      ./images/portfolio/works-3.jpg 1x, 
+                      ./images/portfolio/works-3@2x.jpg 2x" media="(min-width: 320px)">
+                  
+                    <img class="img" src="./images/portfolio/works-3-desktop.jpg" alt="логотип ресторана" />                  
+                  
                   <p class="portfolio__overlay">
                     "Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -236,15 +263,23 @@
               </a>
             </li>
             <li class="portfolio__item">
-              <a class="link portfolio__link" href="">
+              <a class="link portfolio__link" href="#">
                 <div class="portfolio__thumb">
-                  <img
-                    class="portfolio__img img"
-                    src="./images/img4-port.jpg"
-                    alt="наушники"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source srcset="
+                      ./images/portfolio/works-4-desktop.jpg 1x, 
+                      ./images/portfolio/works-4-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                  
+                    <source srcset="
+                      ./images/portfolio/works-4-tablet.jpg 1x, 
+                      ./images/portfolio/works-4-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                  
+                    <source srcset="
+                      ./images/portfolio/works-4.jpg 1x, 
+                      ./images/portfolio/works-4@2x.jpg 2x" media="(min-width: 320px)">
+                  
+                    <img class="img" src="./images/portfolio/works-4-desktop.jpg" alt="наушники" />
+                  
                   <p class="portfolio__overlay">
                     "Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -261,15 +296,23 @@
               </a>
             </li>
             <li class="portfolio__item">
-              <a class="link portfolio__link" href="">
+              <a class="link portfolio__link" href="#">
                 <div class="portfolio__thumb">
-                  <img
-                    class="portfolio__img img"
-                    src="./images/img5-port.jpg"
-                    alt="две коробки"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source srcset="
+                      ./images/portfolio/works-5-desktop.jpg 1x, 
+                      ./images/portfolio/works-5-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                  
+                    <source srcset="
+                      ./images/portfolio/works-5-tablet.jpg 1x, 
+                      ./images/portfolio/works-5-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                  
+                    <source srcset="
+                      ./images/portfolio/works-5.jpg 1x, 
+                      ./images/portfolio/works-5@2x.jpg 2x" media="(min-width: 320px)">
+                  
+                    <img class="img" src="./images/portfolio/works-5-desktop.jpg" alt="две коробки" />
+                  
                   <p class="portfolio__overlay">
                     "Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -286,15 +329,23 @@
               </a>
             </li>
             <li class="portfolio__item">
-              <a class="link portfolio__link" href="">
+              <a class="link portfolio__link" href="#">
                 <div class="portfolio__thumb">
-                  <img
-                    class="portfolio__img img"
-                    src="./images/img6-port.jpg"
-                    alt="монитор"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source srcset="
+                      ./images/portfolio/works-6-desktop.jpg 1x, 
+                      ./images/portfolio/works-6-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                  
+                    <source srcset="
+                      ./images/portfolio/works-6-tablet.jpg 1x, 
+                      ./images/portfolio/works-6-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                  
+                    <source srcset="
+                      ./images/portfolio/works-6.jpg 1x, 
+                      ./images/portfolio/works-6@2x.jpg 2x" media="(min-width: 320px)">
+                  
+                    <img class="img" src="./images/portfolio/works-6-desktop.jpg" alt="монитор" />
+                  
                   <p class="portfolio__overlay">
                     "Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -311,15 +362,23 @@
               </a>
             </li>
             <li class="portfolio__item">
-              <a class="link portfolio__link" href="">
+              <a class="link portfolio__link" href="#">
                 <div class="portfolio__thumb">
-                  <img
-                    class="portfolio__img img"
-                    src="./images/img7-port.jpg"
-                    alt="открытая книга"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source srcset="
+                      ./images/portfolio/works-7-desktop.jpg 1x, 
+                      ./images/portfolio/works-7-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                  
+                    <source srcset="
+                      ./images/portfolio/works-7-tablet.jpg 1x, 
+                      ./images/portfolio/works-7-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                  
+                    <source srcset="
+                      ./images/portfolio/works-7.jpg 1x, 
+                      ./images/portfolio/works-7@2x.jpg 2x" media="(min-width: 320px)">
+                  
+                    <img class="img" src="./images/portfolio/works-7-desktop.jpg" alt="открытая книга" />
+                  
                   <p class="portfolio__overlay">
                     "Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -336,15 +395,23 @@
               </a>
             </li>
             <li class="portfolio__item">
-              <a class="link portfolio__link" href="">
+              <a class="link portfolio__link" href="#">
                 <div class="portfolio__thumb">
-                  <img
-                    class="portfolio__img img"
-                    src="./images/img8-port.jpg"
-                    alt="картонный лейбл"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source srcset="
+                      ./images/portfolio/works-8-desktop.jpg 1x, 
+                      ./images/portfolio/works-8-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                  
+                    <source srcset="
+                      ./images/portfolio/works-8-tablet.jpg 1x, 
+                      ./images/portfolio/works-8-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                  
+                    <source srcset="
+                      ./images/portfolio/works-8.jpg 1x, 
+                      ./images/portfolio/works-8@2x.jpg 2x" media="(min-width: 320px)">
+                  
+                    <img class="img" src="./images/portfolio/works-8-desktop.jpg" alt="картонный лейбл" />
+                  
                   <p class="portfolio__overlay">
                     "Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -361,15 +428,23 @@
               </a>
             </li>
             <li class="portfolio__item">
-              <a class="link portfolio__link" href="">
+              <a class="link portfolio__link" href="#">
                 <div class="portfolio__thumb">
-                  <img
-                    class="portfolio__img img"
-                    src="./images/img9-port.jpg"
-                    alt="руки работающие на ноутбуке"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source srcset="
+                      ./images/portfolio/works-9-desktop.jpg 1x, 
+                      ./images/portfolio/works-9-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                  
+                    <source srcset="
+                      ./images/portfolio/works-9-tablet.jpg 1x, 
+                      ./images/portfolio/works-9-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                  
+                    <source srcset="
+                      ./images/portfolio/works-9.jpg 1x, 
+                      ./images/portfolio/works-9@2x.jpg 2x" media="(min-width: 320px)">
+                  
+                    <img class="img" src="./images/portfolio/works-9-desktop.jpg" alt="руки работающие на ноутбуке" />
+                  
                   <p class="portfolio__overlay">
                     "Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для

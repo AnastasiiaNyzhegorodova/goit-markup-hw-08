@@ -1,6 +1,6 @@
-.mobile-menu {
-  
+.mobile-menu {  
   position: fixed;  
+
   background-color: #ffffff;
   top: 0;
   left: 0;
@@ -9,23 +9,27 @@
    .container {
      height: 100%;
    }
+   z-index: 5;   
  }
 
-.mobile-menu__close-button {
-  margin: 21px 25px auto auto;
+ 
+ .mobile-menu__close-button {
+  margin-left: auto;
   margin-bottom: 8px;
   display: flex;
   align-items: center;
   border: none;
-  background-color: transparent;
+  background-color: transparent;  
+    &:hover, &:focus .mobile-menu__close-icon {
+      fill: var(--accent-color);
+    }
 }
 
 .mobile-menu__container {
+  padding: 21px 25px 48px 40px;
   display: flex;
   flex-direction: column;
-  // justify-content: space-between;
- 
-}
+ }
 
 .mobile-menu__navigation {
   margin-bottom: auto;
