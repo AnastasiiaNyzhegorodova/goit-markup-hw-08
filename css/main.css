@@ -558,17 +558,20 @@ body {
 }
 
 .page-footer .container {
-  height: 483px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  height: 100%;
 }
 
 @media screen and (min-width: 768px) {
   .page-footer .container {
-    height: 343px;
-    display: block;
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page-footer .container {
+    height: 100%;
+    display: flex;
+    align-items: baseline;
   }
 }
 
@@ -586,11 +589,32 @@ body {
   text-align: center;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px) {
+  .address {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .address-social-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .address-social-wrap {
     display: flex;
     justify-content: space-around;
     margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .address-social-wrap {
+    display: flex;
+    align-items: baseline;
   }
 }
 
@@ -624,6 +648,13 @@ body {
   align-items: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .social__wrap {
+    margin-left: 70px;
+    margin-right: 93px;
+  }
+}
+
 .social__tittle {
   margin-bottom: 20px;
   font-weight: 700;
@@ -648,6 +679,7 @@ body {
 
 .newsletter__text {
   margin-bottom: 20px;
+  margin-top: 60px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -657,14 +689,28 @@ body {
   color: var(--second-text-color);
 }
 
+@media screen and (min-width: 1200px) {
+  .newsletter__text {
+    margin-top: 0;
+    text-align: left;
+  }
+}
+
 .newsletter__wrap {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .newsletter__wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
+}
+
 .newsletter__input {
-  width: 310px;
   height: 50px;
   margin-bottom: 20px;
   padding-left: 16px;
@@ -674,6 +720,24 @@ body {
   border-radius: 4px;
   background-color: transparent;
   outline: none;
+}
+
+@media screen and (max-width: 479px) {
+  .newsletter__input {
+    width: 310px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .newsletter__input {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .newsletter__input {
+    width: 358px;
+  }
 }
 
 .newsletter__input:focus {

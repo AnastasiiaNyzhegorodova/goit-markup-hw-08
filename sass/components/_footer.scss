@@ -1,25 +1,25 @@
 .page-footer {
    margin: auto;
-  padding: 60px 0;
-  // height: 252px;
-  // height: 603px;
-
+  padding: 60px 0;  
+  
   background-color: #2f303a;
     .container {
-      height: 483px;
-      display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;    
+      height: 100%;     
     }
 
     @media screen and (min-width: 768px) {
       .container {
-        height: 343px;
-        display: block;
+        height: 100%;   
       }
     }
 
+    @media screen and (min-width: 1200px) {
+      .container {
+        height: 100%;
+        display: flex;
+        align-items: baseline;        
+      }
+    }
 }
 
 .page-footer__logo {
@@ -34,18 +34,30 @@
 .address {
     font-style: normal;
     text-align: center;
+
+    @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
 }
 
 .address-social-wrap {
-  @media screen and (min-width: 768px) {
-  display: flex;  
-  justify-content: space-around;
-  margin-bottom: 60px;
+   @media screen and (max-width: 767px) {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+   }
+
+   @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;  
+    justify-content: space-around;
+    margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: flex; 
+      align-items: baseline;
+    } 
   }
-  
-  
-  // align-items: baseline;
-}
 
 .address__link {
   color: inherit;
@@ -77,9 +89,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  // margin-left: 70px;
-  // margin-right: 93px;
+
+  @media screen and (min-width: 1200px) {
+  margin-left: 70px;
+  margin-right: 93px;
   }
+}
 
 .social__tittle {
   margin-bottom: 20px;
@@ -108,6 +123,7 @@
 
 .newsletter__text {
   margin-bottom: 20px;
+  margin-top: 60px;
 
   font-weight: 700;
   font-size: 14px;
@@ -116,16 +132,27 @@
   text-transform: uppercase;
   text-align: center;
   color: var(--second-text-color);
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+    text-align: left;
+    }
 }
 
 .newsletter__wrap { 
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center;  
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline
+  } 
 }
 
 .newsletter__input {
-  width: 310px;
+  
   height: 50px;
   margin-bottom: 20px;
   padding-left: 16px;
@@ -136,8 +163,19 @@
   border-radius: 4px;
   background-color: transparent;
   outline: none; 
+
+    @media screen and (max-width: 479px) {
+      width: 310px;
+    }
+
+    @media screen and (min-width: 480px) {
+      width: 450px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 358px;
+    }  
   
-  // width: 358px;
   &:focus {
     border-color: var(--accent-color);
   &::placeholder {
