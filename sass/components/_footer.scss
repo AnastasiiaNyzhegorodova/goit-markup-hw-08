@@ -33,12 +33,8 @@
 
 .address {
     font-style: normal;
-    text-align: center;
-
-    @media screen and (max-width: 767px) {
-    margin-bottom: 60px;
+    text-align: center;   
   }
-}
 
 .address-social-wrap {
    @media screen and (max-width: 767px) {
@@ -56,7 +52,17 @@
     @media screen and (min-width: 1200px) {
       display: flex; 
       align-items: baseline;
+    }
+  }
+
+  .address-wrap {
+    @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
     } 
+  
+    @media screen and (min-width: 1200px) {
+      margin-right: 70px;
+    }
   }
 
 .address__link {
@@ -90,8 +96,7 @@
   flex-direction: column;
   align-items: center;
 
-  @media screen and (min-width: 1200px) {
-  margin-left: 70px;
+  @media screen and (min-width: 1200px) {  
   margin-right: 93px;
   }
 }
@@ -121,9 +126,14 @@
   fill: #ffffff;
 }
 
+.newsletter {
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    margin-top: 60px;
+  }
+}
+
 .newsletter__text {
-  margin-bottom: 20px;
-  margin-top: 60px;
+  margin-bottom: 20px;  
 
   font-weight: 700;
   font-size: 14px;

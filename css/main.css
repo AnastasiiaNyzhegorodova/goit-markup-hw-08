@@ -263,8 +263,6 @@ body {
 
 @media screen and (min-width: 768px) {
   .hero {
-    flex-basis: calc(100% / 2 - 30px);
-    margin: 15px;
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/hero/hero-tablet.jpg);
   }
 }
@@ -277,6 +275,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .hero {
+    padding: 200px 0;
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/hero/hero-desktop.jpg);
   }
 }
@@ -319,6 +318,12 @@ body {
 
 .values {
   padding-bottom: 0;
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .values {
+    padding-bottom: 60px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -589,12 +594,6 @@ body {
 }
 
 @media screen and (max-width: 767px) {
-  .address {
-    margin-bottom: 60px;
-  }
-}
-
-@media screen and (max-width: 767px) {
   .address-social-wrap {
     display: flex;
     flex-direction: column;
@@ -614,6 +613,18 @@ body {
   .address-social-wrap {
     display: flex;
     align-items: baseline;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .address-wrap {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .address-wrap {
+    margin-right: 70px;
   }
 }
 
@@ -649,7 +660,6 @@ body {
 
 @media screen and (min-width: 1200px) {
   .social__wrap {
-    margin-left: 70px;
     margin-right: 93px;
   }
 }
@@ -676,9 +686,14 @@ body {
   fill: #ffffff;
 }
 
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .newsletter {
+    margin-top: 60px;
+  }
+}
+
 .newsletter__text {
   margin-bottom: 20px;
-  margin-top: 60px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -1025,7 +1040,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: start;
-  margin-top: -15px;
 }
 
 .filter .filter__item:not(:last-child) {

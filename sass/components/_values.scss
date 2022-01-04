@@ -1,5 +1,9 @@
 .values {
   padding-bottom: 0;
+   @media screen and (min-width: 480px) and(max-width: 1199px) {
+     padding-bottom: 60px;
+   }
+
 }
 
 .values__list {
