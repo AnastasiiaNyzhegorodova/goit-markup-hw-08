@@ -612,13 +612,8 @@ body {
 @media screen and (min-width: 1200px) {
   .address-social-wrap {
     display: flex;
+    margin-right: 93px;
     align-items: baseline;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .address-wrap {
-    margin-bottom: 60px;
   }
 }
 
@@ -656,12 +651,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-@media screen and (min-width: 1200px) {
-  .social__wrap {
-    margin-right: 93px;
-  }
 }
 
 .social__tittle {
@@ -1048,6 +1037,12 @@ body {
 
 .filter .filter__item {
   margin-top: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .filter .filter__item {
+    margin-top: 0;
+  }
 }
 
 @media screen and (min-width: 768px) {
